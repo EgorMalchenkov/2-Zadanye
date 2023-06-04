@@ -1,0 +1,10 @@
+import math
+print("Не указывать градусы и метры-сантиметры")
+r=int(input("Напишите расстояние от точки О до М: "))
+q=int(input("Запишите угол между поляроной осью и вектором: "))
+x = r * math.cos(q)
+y = r * math.sin(q)
+Rnew=math.sqrt((x ** 2) + (y ** 2))
+Cosq = (x/Rnew)
+Sinq = (y/Rnew)
+print("r=",Rnew,",Косинус q=",Cosq,",Синус q=",Sinq)
